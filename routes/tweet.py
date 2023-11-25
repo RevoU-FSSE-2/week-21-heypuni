@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from marshmallow import ValidationError
 from datetime import datetime
 from utils import decode_token
-from configs import db
+from config import db
 from models.user import User
 from models.tweet import Tweet
 from schemas.tweet import TweetSchema

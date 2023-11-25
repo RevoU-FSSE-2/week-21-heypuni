@@ -3,12 +3,12 @@ from routes.auth import auth_bp
 from routes.tweet import tweet_bp
 from routes.following import following_bp
 from routes.user import user_bp
-from configs import db, bcrypt
+from config import db, bcrypt
 
 app = Flask(__name__)
 
 # Konfigurasi database
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:c6B2EGeG6c415BC2gGD4FfF5dFGG-6D1@roundhouse.proxy.rlwy.net:58077/railway"
 
 app.register_blueprint(auth_bp, url_prefix="/auth")
 app.register_blueprint(tweet_bp)

@@ -1,4 +1,4 @@
-from configs import db
+from config import db
 from sqlalchemy.dialects.sqlite import JSON
 
 

@@ -1,6 +1,6 @@
 from flask import request, jsonify, Blueprint
 from marshmallow import ValidationError
-from configs import db
+from config import db
 from models.user import User
 from schemas.following import UserFollowing
 from utils import decode_token

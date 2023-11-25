@@ -1,4 +1,4 @@
-from configs import db
+from config import db
 
 
 class Tweet(db.Model):

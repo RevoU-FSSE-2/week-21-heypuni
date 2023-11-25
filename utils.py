@@ -1,10 +1,10 @@
 import jwt
-import configs
+import config
 
 
 def decode_token(token):
     try:
-        payload = jwt.decode(token, configs.secret_key, algorithms=["HS256"])
+        payload = jwt.decode(token, config.secret_key, algorithms=["HS256"])
         return payload
     except jwt.exceptions.ExpiredSignatureError:
         return {"error_message": "tolong login dari awal lagi"}, 400
